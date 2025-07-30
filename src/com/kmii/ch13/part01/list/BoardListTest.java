@@ -1,4 +1,4 @@
-package java_ch13_20250730;
+package com.kmii.ch13.part01.list;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -9,8 +9,6 @@ public class BoardListTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		
 		
 		List<Board> boardList = new ArrayList<Board>();  // <>안에 여기에 사용할 객체를 만들어준 class 가져온다
 		Date nowDate = new Date(); // 현재 오늘 날짜 시간

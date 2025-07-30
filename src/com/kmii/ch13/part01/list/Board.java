@@ -1,4 +1,4 @@
-package java_ch13_20250730;
+package com.kmii.ch13.part01.list;
 
 import java.sql.Timestamp;
 

@@ -1,6 +1,7 @@
-package java_ch13_20250730;
+package com.kmii.ch13.part01.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListTest {
@@ -25,6 +26,30 @@ public class ArrayListTest {
 		System.out.println(strList.get(0));   // kor
 		System.out.println(strList.get(1));   //jap
 		//System.out.println(strList.get(2)); // out of bounds 에러 발생! 인덱스 해당하는 내용x
+		
+		System.out.println("-------------------------");
+		
+		for (int i = 0 ; i < strList.size(); i++) {
+			System.out.println(strList.get(i));
+		}
+		
+		System.out.println("-------------------------");
+		
+		//향상된 for문
+		for(String str : strList) {
+			System.out.println(str);
+		}
+		
+		//Iterator 사용
+		Iterator<String> iterator = strList.iterator(); 
+		
+		while(iterator.hasNext()) {
+			String str = iterator.next();
+			System.out.println(str);
+		}
+	
+		
+		
 	}
 
 }
