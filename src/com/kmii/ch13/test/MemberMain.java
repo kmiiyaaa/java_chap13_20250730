@@ -16,7 +16,9 @@ public class MemberMain {
 		Iterator<MemberDto> iterator = list.iterator();
 		
 		while (iterator.hasNext()) {
-			iterator.next();
+			
+			MemberDto mem = iterator.next();
+			System.out.println(mem.getId() + "/" + mem.getPw() + "/" + mem.getName() + "/" + mem.getEmail());
 			
 		}
 		

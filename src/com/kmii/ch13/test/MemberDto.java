@@ -5,19 +5,19 @@ public class MemberDto {
 	private String id;
 	private String pw;
 	private String name;
-	private String emai;
+	private String email;
 	
 	public MemberDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public MemberDto(String id, String pw, String name, String emai) {
+	public MemberDto(String id, String pw, String name, String email) {
 		super();
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
-		this.emai = emai;
+		this.email = email;
 	}
 
 	public String getId() {
@@ -44,12 +44,12 @@ public class MemberDto {
 		this.name = name;
 	}
 
-	public String getEmai() {
-		return emai;
+	public  String getEmail() {
+		return email;
 	}
 
-	public void setEmai(String emai) {
-		this.emai = emai;
+	public void setEmai(String email) {
+		this.email = email;
 	}
 	
 	
