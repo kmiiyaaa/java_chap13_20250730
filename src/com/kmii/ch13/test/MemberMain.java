@@ -1,6 +1,5 @@
 package com.kmii.ch13.test;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -14,13 +13,22 @@ public class MemberMain {
 		
 		
 		Iterator<MemberDto> iterator = list.iterator();
-		
 		while (iterator.hasNext()) {
 			
 			MemberDto mem = iterator.next();
 			System.out.println(mem.getId() + "/" + mem.getPw() + "/" + mem.getName() + "/" + mem.getEmail());
 			
 		}
+		
+		/*
+		List<MemberDto> list = memberDao.getBoardList();
+
+		for (MemberDto mem : list) {
+    	System.out.println(mem.getId() + "/" + mem.getPw() + "/" + mem.getName() + "/" + mem.getEmail());
+		}
+
+		 
+		*/
 		
 	}
 
